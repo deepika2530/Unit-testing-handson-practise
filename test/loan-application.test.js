@@ -1,5 +1,4 @@
 import { html, fixture, expect } from '@open-wc/testing';
-import Sinon from 'sinon';
 import LoanApplication from '../../Unit-testing-handson-practise/src/LoanApplication';
 
 customElements.define('loan-application', LoanApplication);
@@ -14,7 +13,8 @@ describe('LoanApplication', () => {
       expect(el).to.be.accessible;
     });
 
-  //   it('constructor initializes values', () => {
-  //     expect(el.counter).to.equal(5);
-  // });
+    it('should increment value', () => {
+      el. __increment();
+      expect(el.counter).to.equal(6);
+  });
 });
